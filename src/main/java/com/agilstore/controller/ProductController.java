@@ -17,14 +17,13 @@ public class ProductController {
     }
 
     public void addProduct() {
-        System.out.println("-------- Bem-vindo a Agil Store ---------");
         System.out.println("Digite o nome do produto: ");
         String name = scanner.nextLine();
         System.out.println("Digite a categoria do produto: ");
         String category = scanner.nextLine();
         System.out.println("Digite a quantidade do produto: ");
         int quantity = scanner.nextInt();
-        System.out.println("Digite o preço do produto: ");
+        System.out.println("Digite o preço do produto: R$ ");
         double price = scanner.nextDouble();
         scanner.nextLine();
 
@@ -42,7 +41,7 @@ public class ProductController {
         } else {
             for (Product product : products) {
                 product.displayProduct();
-                System.out.println("---------");
+                System.out.println("-----------------------------------------\n");
             }
         }
     }
@@ -59,7 +58,7 @@ public class ProductController {
             } else {
                 for (Product p : foundProducts) {
                     p.displayProduct();
-                    System.out.println("---------");
+                    System.out.println("-----------------------------------------\n");
                 }
             }
         } else {

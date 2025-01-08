@@ -1,7 +1,7 @@
 package com.agilstore;
 
-import controller.ProductController;
-import repository.ProductRepository;
+import com.agilstore.controller.ProductController;
+import com.agilstore.repository.ProductRepository;
 import java.util.Scanner;
 
 public class Main {
@@ -11,12 +11,14 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
+            System.out.println("\n-------- Bem-vindo a Agil Store ---------\n");
             System.out.println("1 - Adicionar Produto");
             System.out.println("2 - Listar Produtos");
             System.out.println("3 - Pesquisar produto");
             System.out.println("4 - Atualizar produto");
             System.out.println("5 - Excluir Produto");
             System.out.println("6 - Sair");
+            System.out.println("-----------------------------------------\n");
             System.out.print("Escolha uma opção: ");
             int choice = scanner.nextInt();
             scanner.nextLine();
