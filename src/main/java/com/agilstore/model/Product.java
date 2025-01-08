@@ -56,9 +56,11 @@ public class Product {
         this.price = price;
     }
 
-    @Override
-    public String toString() {
-        return "ID: " + id + " | Name: " + name + " | Category: " + category +
-                " | Quantity: " + quantity + " | Price: " + price;
+    public void displayProduct() {
+        System.out.println("ID: " + id);
+        System.out.println("Name: " + name);
+        System.out.println("Category: " + category);
+        System.out.println("Quantity: " + quantity);
+        System.out.println("Price: " + price);
     }
 }
