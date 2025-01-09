@@ -19,8 +19,8 @@ public class Main {
             System.out.println("3 - Pesquisar produto");
             System.out.println("4 - Atualizar produto");
             System.out.println("5 - Excluir Produto");
-            System.out.println("6 - Sair");
-            System.out.println("-------------------------------------------\n");
+            System.out.println("6 - Sair\n");
+            System.out.println("------------------------------------------\n");
             System.out.print("Escolha uma opção: \n");
             int choice = scanner.nextInt();
             scanner.nextLine();
