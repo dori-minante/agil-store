@@ -41,7 +41,7 @@ public class ProductController {
         } else {
             for (Product product : products) {
                 product.displayProduct();
-                System.out.println("-------------------------------------------\n");
+                System.out.println("------------------------------------------\n");
             }
         }
     }
@@ -58,7 +58,7 @@ public class ProductController {
             } else {
                 for (Product p : foundProducts) {
                     p.displayProduct();
-                    System.out.println("-------------------------------------------\n");
+                    System.out.println("------------------------------------------\n");
                 }
             }
         } else {
