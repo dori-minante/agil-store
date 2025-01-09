@@ -17,14 +17,13 @@ public class ProductController {
     }
 
     public void addProduct() {
-        System.out.println("-------- Bem-vindo a Agil Store ---------");
         System.out.println("Digite o nome do produto: ");
         String name = scanner.nextLine();
         System.out.println("Digite a categoria do produto: ");
         String category = scanner.nextLine();
         System.out.println("Digite a quantidade do produto: ");
         int quantity = scanner.nextInt();
-        System.out.println("Digite o preço do produto: ");
+        System.out.println("Digite o preço do produto: R$ ");
         double price = scanner.nextDouble();
         scanner.nextLine();
 
@@ -42,13 +41,13 @@ public class ProductController {
         } else {
             for (Product product : products) {
                 product.displayProduct();
-                System.out.println("---------");
+                System.out.println("-------------------------------------------\n");
             }
         }
     }
 
     public void searchProduct() {
-        System.out.println("Digite o ID ou nome do produto para buscar:");
+        System.out.println("Digite o ID ou nome do produto para buscar: ");
         String searchTerm = scanner.nextLine();
 
         Product product = productRepository.getProductById(searchTerm);
@@ -59,7 +58,7 @@ public class ProductController {
             } else {
                 for (Product p : foundProducts) {
                     p.displayProduct();
-                    System.out.println("---------");
+                    System.out.println("-------------------------------------------\n");
                 }
             }
         } else {
@@ -78,17 +77,17 @@ public class ProductController {
     }
 
     public void updateProduct() {
-        System.out.println("Digite o ID do produto para atualizar:");
+        System.out.println("Digite o ID do produto para atualizar: ");
         String id = scanner.nextLine();
         Product product = productRepository.getProductById(id);
         if (product != null) {
-            System.out.println("Digite o novo nome do produto:");
+            System.out.println("Digite o novo nome do produto: ");
             String name = scanner.nextLine();
-            System.out.println("Digite a nova categoria do produto:");
+            System.out.println("Digite a nova categoria do produto: ");
             String category = scanner.nextLine();
-            System.out.println("Digite a nova quantidade do produto:");
+            System.out.println("Digite a nova quantidade do produto: ");
             int quantity = scanner.nextInt();
-            System.out.println("Digite o novo preço do produto:");
+            System.out.println("Digite o novo preço do produto: R$ ");
             double price = scanner.nextDouble();
             scanner.nextLine();
 
@@ -104,7 +103,7 @@ public class ProductController {
     }
 
     public void deleteProduct() {
-        System.out.println("Digite o ID do produto para excluir:");
+        System.out.println("Digite o ID do produto para excluir: ");
         String id = scanner.nextLine();
         if (productRepository.deleteProduct(id)) {
             System.out.println("Produto excluído com sucesso!");

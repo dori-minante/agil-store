@@ -13,13 +13,15 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
+            System.out.println("\n-------- Bem-vindo à Agil Store ---------\n");
             System.out.println("1 - Adicionar Produto");
             System.out.println("2 - Listar Produtos");
             System.out.println("3 - Pesquisar produto");
             System.out.println("4 - Atualizar produto");
             System.out.println("5 - Excluir Produto");
             System.out.println("6 - Sair");
-            System.out.print("Escolha uma opção: ");
+            System.out.println("-------------------------------------------\n");
+            System.out.print("Escolha uma opção: \n");
             int choice = scanner.nextInt();
             scanner.nextLine();
 
