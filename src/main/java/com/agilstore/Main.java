@@ -1,7 +1,9 @@
 package com.agilstore;
 
-import controller.ProductController;
-import repository.ProductRepository;
+
+import com.agilstore.controller.ProductController;
+import com.agilstore.repository.ProductRepository;
+
 import java.util.Scanner;
 
 public class Main {

@@ -1,6 +1,7 @@
 package com.agilstore.repository;
 
-import model.Product;
+import com.agilstore.model.Product;
+
 import java.util.ArrayList;
 import java.util.List;
 
